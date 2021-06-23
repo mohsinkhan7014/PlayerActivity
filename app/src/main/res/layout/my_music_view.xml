@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        android:id="@+id/mycard"
+       >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/linear">
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/imageMusic"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:src="@drawable/musicbg"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#FF000000"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+               />
+            </LinearLayout>
+            <TextView
+                android:text="Song Name"
+                android:textSize="20dp"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/black"
+                android:singleLine="true"
+                android:id="@+id/nameDesc"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_toRightOf="@+id/linear"
+                android:layout_marginTop="40dp"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:ellipsize="marquee"
+                android:scrollHorizontally="true"
+                android:layout_marginLeft="2dp"
+                />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
